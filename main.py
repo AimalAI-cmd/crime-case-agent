@@ -13,28 +13,28 @@ def main():
     agent = MasterAgent()
     agent.start()
 
-    # Research Agent
+    # Research
     research_agent = ResearchAgent()
-    research = research_agent.research("The Zodiac Killer")
+    video = research_agent.research("The Zodiac Killer")
 
     print("\nResearch Result:\n")
-    print(research)
+    print(video.title)
+    print(video.summary)
 
-    # Script Writer
+    # Script Writing
     script_writer = ScriptWriter()
-    script = script_writer.write_script(research)
+    video = script_writer.write_script(video)
 
     print("\nGenerated Script:\n")
-    print(script)
+    print(video.script)
 
     # Save Script
     FileManager.create_folder("videos/Test Project")
 
     FileManager.save_text(
-    "videos/Test Project/script.txt",
-    script
-)
-    
+        "videos/Test Project/script.txt",
+        video.script
+    )
 
     logger.info("Test files created successfully.")
     logger.info("Application Started Successfully")

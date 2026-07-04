@@ -1,27 +1,26 @@
 class ScriptWriter:
 
-    def write_script(self, research):
-
-        title = research["title"]
-        summary = research["summary"]
+    def write_script(self, video):
 
         script = f"""
-Title: {title}
+Title: {video.title}
 
 Introduction
 
-{summary}
+{video.summary}
 
 Timeline
 
 """
 
-        for event in research["timeline"]:
+        for event in video.timeline:
             script += f"- {event}\n"
 
         script += "\nInteresting Facts\n"
 
-        for fact in research["interesting_facts"]:
+        for fact in video.interesting_facts:
             script += f"- {fact}\n"
 
-        return script
+        video.script = script
+
+        return video
