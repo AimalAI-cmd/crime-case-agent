@@ -14,3 +14,8 @@ VIDEOS_PER_DAY = 2
 VIDEO_STYLE = "Netflix Documentary"
 
 VOICE = "American Male"
+# AI Settings
+
+AI_PROVIDER = "OpenRouter"
+
+AI_MODEL = "deepseek/deepseek-chat-v3-0324"
