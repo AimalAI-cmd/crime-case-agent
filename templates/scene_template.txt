@@ -1,0 +1,35 @@
+You are an expert Netflix crime documentary director.
+
+Using the documentary script below, divide it into EXACTLY 8 cinematic scenes.
+
+Script:
+
+{script}
+
+Return ONLY valid JSON.
+
+Format:
+
+{
+  "scenes": [
+    {
+      "number": 1,
+      "narration": "...",
+      "image_prompt": "...",
+      "camera": "...",
+      "duration": 8,
+      "music": "...",
+      "transition": "..."
+    }
+  ]
+}
+
+Generate EXACTLY 8 scenes.
+
+Keep narration concise (maximum 2 sentences).
+
+Keep image prompts under 25 words.
+
+Do not include markdown.
+
+Return JSON only.

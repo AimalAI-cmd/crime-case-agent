@@ -11,3 +11,12 @@ class PromptManager:
         )
 
         return prompt.replace("{topic}", topic)
+
+    @staticmethod
+    def scene_prompt(script):
+
+        prompt = FileManager.read_text(
+            "templates/scene_template.txt"
+        )
+
+        return prompt.replace("{script}", script)

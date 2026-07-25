@@ -1,6 +1,7 @@
 class Video:
 
     def __init__(self):
+
         self.title = ""
         self.topic = ""
         self.summary = ""
@@ -8,6 +9,8 @@ class Video:
         self.interesting_facts = []
 
         self.script = ""
+
+        self.scenes = []
 
         self.images = []
 
@@ -18,3 +21,5 @@ class Video:
         self.thumbnail = ""
 
         self.final_video = ""
+
+        self.scenes = []
