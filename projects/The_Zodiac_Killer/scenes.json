@@ -1,0 +1,76 @@
+{
+    "scenes": [
+        {
+            "number": 1,
+            "narration": "Northern California, 1968. A shadowy figure emerges, beginning a reign of terror that would baffle authorities for decades.",
+            "image_prompt": "Foggy night in Vallejo, a lone figure lurking.",
+            "camera": "Wide shot, slow pan.",
+            "duration": 8,
+            "music": "Eerie, low-frequency drones.",
+            "transition": "Fade in from black."
+        },
+        {
+            "number": 2,
+            "narration": "December 20, 1968. David Faraday and Betty Lou Jensen are found shot dead in their car, the first confirmed Zodiac victims.",
+            "image_prompt": "Abandoned car, blood on the windows.",
+            "camera": "Close-up of the crime scene.",
+            "duration": 7,
+            "music": "Silence with distant sirens.",
+            "transition": "Cut to next scene."
+        },
+        {
+            "number": 3,
+            "narration": "July 4, 1969. The Zodiac strikes again, leaving Darlene Ferrin dead and Mike Mageau critically wounded.",
+            "image_prompt": "Parking lot, flashing police lights.",
+            "camera": "Handheld, shaky footage.",
+            "duration": 6,
+            "music": "Tense, rising strings.",
+            "transition": "Quick cut."
+        },
+        {
+            "number": 4,
+            "narration": "September 27, 1969. Bryan Hartnell and Cecelia Shepard are attacked at Lake Berryessa, the Zodiac's most brazen assault yet.",
+            "image_prompt": "Peaceful lake, sudden violence erupts.",
+            "camera": "Overhead drone shot.",
+            "duration": 9,
+            "music": "Sudden, jarring percussion.",
+            "transition": "Slow zoom in."
+        },
+        {
+            "number": 5,
+            "narration": "October 11, 1969. Paul Stine is murdered in San Francisco, the Zodiac's only confirmed killing in the city.",
+            "image_prompt": "Taxi cab, blood on the seat.",
+            "camera": "POV from the backseat.",
+            "duration": 7,
+            "music": "Muffled, distant voices.",
+            "transition": "Fade to black."
+        },
+        {
+            "number": 6,
+            "narration": "The Zodiac begins sending cryptic letters to the press, taunting police and claiming more victims.",
+            "image_prompt": "Newspaper headlines, cryptic symbols.",
+            "camera": "Close-up of a letter.",
+            "duration": 8,
+            "music": "Unsettling, whispered voices.",
+            "transition": "Crossfade."
+        },
+        {
+            "number": 7,
+            "narration": "July 26, 1970. The last confirmed Zodiac letter is sent, leaving more questions than answers.",
+            "image_prompt": "Envelope with a red Zodiac symbol.",
+            "camera": "Extreme close-up.",
+            "duration": 6,
+            "music": "Dissonant piano notes.",
+            "transition": "Quick cut."
+        },
+        {
+            "number": 8,
+            "narration": "The Zodiac Killer vanishes, leaving behind a legacy of fear and unsolved mysteries.",
+            "image_prompt": "Empty park bench at dusk.",
+            "camera": "Wide shot, slow pull back.",
+            "duration": 10,
+            "music": "Fading, melancholic strings.",
+            "transition": "Fade to black."
+        }
+    ]
+}
