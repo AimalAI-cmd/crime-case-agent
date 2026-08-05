@@ -30,4 +30,3 @@ AI_PROVIDER = "OpenRouter"
 AI_MODEL = "deepseek/deepseek-chat-v3-0324"
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-print("DEBUG OPENROUTER_API_KEY:", OPENROUTER_API_KEY)

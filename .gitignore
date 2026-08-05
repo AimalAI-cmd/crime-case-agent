@@ -1,10 +1,63 @@
+# ==========================
 # Python
+# ==========================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Environment variables
+
+# ==========================
+# Environment
+# ==========================
 .env
 
-# Project folders
-temp/
+
+# ==========================
+# Logs
+# ==========================
 logs/
+
+
+# ==========================
+# Cache
+# ==========================
+cache/
+**/cache/
+
+
+# ==========================
+# Temporary files
+# ==========================
+temp/
+tmp/
+
+
+# ==========================
+# Generated Project Data
+# ==========================
+projects/*/images/
+projects/*/audio/
+projects/*/clips/
+projects/*/subtitles/
+projects/*/final_documentary.mp4
+
+
+# ==========================
+# Test Outputs
+# ==========================
+videos/
+
+
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
+
+
+# ==========================
+# OS
+# ==========================
+.DS_Store
+Thumbs.db
