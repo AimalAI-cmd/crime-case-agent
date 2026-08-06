@@ -1,9 +1,10 @@
 {
     "project": "The_Zodiac_Killer",
-    "status": "scene_planning_completed",
+    "status": "image_generation_completed",
     "completed_steps": [
         "research",
         "script",
-        "scene_planning"
+        "scene_planning",
+        "image_generation"
     ]
 }

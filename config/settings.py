@@ -27,6 +27,10 @@ VOICE = "American Male"
 
 AI_PROVIDER = "OpenRouter"
 
-AI_MODEL = "deepseek/deepseek-chat-v3-0324"
+# Text Generation
+TEXT_MODEL = "deepseek/deepseek-chat-v3-0324"
+
+# Image Generation
+IMAGE_MODEL = "black-forest-labs/flux-1.1-pro"
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")

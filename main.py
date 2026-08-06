@@ -2,6 +2,7 @@ from agents.master_agent import MasterAgent
 from agents.research_agent import ResearchAgent
 from agents.script_writer import ScriptWriter
 from agents.scene_planner import ScenePlanner
+from agents.image_generator import ImageGenerator
 
 from services.project_manager import ProjectManager
 
@@ -21,7 +22,6 @@ def main():
     agent = MasterAgent()
     agent.start()
 
-
     try:
 
         # ==================================================
@@ -33,7 +33,6 @@ def main():
         )
 
         project.create_project()
-
 
         print("\nProject Ready:")
         print(project.base_folder)
@@ -49,13 +48,11 @@ def main():
             "The Zodiac Killer"
         )
 
-
         print("\n========== RESEARCH RESULT ==========\n")
 
         print(video.title)
         print()
         print(video.summary)
-
 
 
         # ==================================================
@@ -66,11 +63,9 @@ def main():
 
         video = script_writer.write_script(video)
 
-
         print("\n========== GENERATED SCRIPT ==========\n")
 
         print(video.script)
-
 
 
         # ==================================================
@@ -81,7 +76,6 @@ def main():
             project.script_file,
             video.script
         )
-
 
 
         # ==================================================
@@ -113,6 +107,17 @@ def main():
 
             print("-" * 60)
 
+
+        # ==================================================
+        # Image Generation
+        # ==================================================
+
+        image_generator = ImageGenerator()
+
+        image_generator.generate(
+            video,
+            project
+        )
 
 
         # ==================================================
@@ -159,7 +164,6 @@ def main():
             )
 
 
-
         # ==================================================
         # Create Initial State
         # ==================================================
@@ -168,7 +172,7 @@ def main():
 
             "project": project.project_name,
 
-            "status": "scene_planning_completed",
+            "status": "image_generation_completed",
 
             "completed_steps": [
 
@@ -176,7 +180,9 @@ def main():
 
                 "script",
 
-                "scene_planning"
+                "scene_planning",
+
+                "image_generation"
 
             ]
 
@@ -196,7 +202,6 @@ def main():
             )
 
 
-
         logger.info(
             "Project files created successfully."
         )
@@ -205,13 +210,13 @@ def main():
             "Application Started Successfully"
         )
 
+
         print("\n================================")
         print("PROJECT PIPELINE COMPLETED")
         print("================================\n")
 
 
     except Exception as e:
-
 
         print("\n========== FULL ERROR ==========\n")
 
@@ -220,7 +225,6 @@ def main():
         print("\n===============================\n")
 
         logger.error(str(e))
-
 
 
 if __name__ == "__main__":

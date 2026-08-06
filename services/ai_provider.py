@@ -3,7 +3,7 @@ import requests
 
 from config.settings import (
     AI_PROVIDER,
-    AI_MODEL,
+    TEXT_MODEL,
     OPENROUTER_API_KEY
 )
 
@@ -12,7 +12,7 @@ class AIProvider:
 
     def __init__(self):
         self.provider = AI_PROVIDER
-        self.model = AI_MODEL
+        self.model = TEXT_MODEL
 
     def generate(self, prompt):
 
